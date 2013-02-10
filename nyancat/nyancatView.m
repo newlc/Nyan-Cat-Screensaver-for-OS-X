@@ -106,7 +106,7 @@
     
     
     //Figure out where to draw nyancat 
-    CGImageRef imageRef = (CGImageRef) gifFrames[gifFrameNumber];
+    CGImageRef imageRef = (CGImageRef) [gifFrames objectAtIndex:gifFrameNumber];
 
     NSImage* currentFrame = [[NSImage alloc] initWithCGImage:imageRef size:NSZeroSize];
 
